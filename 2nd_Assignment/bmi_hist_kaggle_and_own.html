@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Histograms (Own vs Kaggle Data)</title>
+    <!-- Load D3.js from the official CDN -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <!-- Create an SVG element where the histogram will be rendered -->
+    <svg width="800" height="500"></svg>
+
+    <script>
+        // Set the width, height, and margins for the SVG canvas
+        const width = 800;
+        const height = 500;
+        const margin = {top: 50, right: 30, bottom: 60, left: 50};
+
+        // Select the SVG element and set its dimensions
+        const svg = d3.select("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        // Load both datasets using d3.csv() and process them together
+        Promise.all([
+            d3.csv("https://raw.githubusercontent.com/vlewir/adatvizualizacio/refs/heads/main/BMI_fit_own.csv"),
+            d3.csv("https://raw.githubusercontent.com/vlewir/adatvizualizacio/refs/heads/main/BMI_fit_kaggle.csv")
+        ]).then(function(datasets) {
+            // First dataset (Own data)
+            const ownData = datasets[0].map(d => +d.BMI);
+            // Second dataset (Kaggle data)
+            const kaggleData = datasets[1].map(d => +d.BMI);
+
+            // Combine the datasets for consistent scaling
+            const combinedData = ownData.concat(kaggleData);
+
+            // Define the x-axis scale for BMI starting at 10 and extending to 80
+            const x = d3.scaleLinear()
+                .domain([10, 80]) // Set the domain to start from 10 and go to 80
+                .range([margin.left, width - margin.right]);
+
+            // Define a histogram generator for BMI data
+            const histogram = d3.histogram()
+                .domain(x.domain())
+                .thresholds(x.ticks(20)); // Divide into 20 bins
+
+            // Generate the bins from the BMI data for both datasets
+            const ownBins = histogram(ownData);
+            const kaggleBins = histogram(kaggleData);
+
+            // Define the y-axis scale based on the frequency of BMI in each bin, up to 70
+            const y = d3.scaleLinear()
+                .domain([0, 70]) // Set the domain to go up to 70
+                .range([height - margin.bottom, margin.top]);
+
+            // Add the x-axis to the SVG
+            svg.append("g")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .call(d3.axisBottom(x))
+                .attr("font-size", '12px');
+
+            // Add the x-axis label
+            svg.append("text")
+                .attr("text-anchor", "middle")
+                .attr("x", width / 2)
+                .attr("y", height - 20)
+                .text("BMI")
+                .style("font-size", "14px");
+
+            // Add the y-axis to the SVG
+            svg.append("g")
+                .attr("transform", `translate(${margin.left},0)`)
+                .call(d3.axisLeft(y))
+                .attr("font-size", '12px');
+
+            // Add the y-axis label
+            svg.append("text")
+                .attr("text-anchor", "middle")
+                .attr("x", -height / 2)
+                .attr("y", 15)
+                .attr("transform", "rotate(-90)")
+                .text("Gyakoriság")
+                .style("font-size", "14px");
+
+            // Plot the Kaggle data with animation
+            svg.selectAll(".bar-kaggle")
+                .data(kaggleBins)
+                .enter()
+                .append("rect")
+                .attr("class", "bar-kaggle")
+                .attr("x", d => x(d.x0) + 1)
+                .attr("y", height - margin.bottom)  // Start from the bottom
+                .attr("width", d => x(d.x1) - x(d.x0) - 1)
+                .attr("height", 0)  // Start with height 0
+                .style("fill", "#17BECF")  // Kaggle color
+                .transition()  // Animate the bars
+                .duration(1000)
+                .attr("y", d => y(d.length))  // Move to the correct y position
+                .attr("height", d => y(0) - y(d.length));  // Grow the bars to full height
+
+            // Plot the Own data with animation
+            svg.selectAll(".bar-own")
+                .data(ownBins)
+                .enter()
+                .append("rect")
+                .attr("class", "bar-own")
+                .attr("x", d => x(d.x0) + 1)
+                .attr("y", height - margin.bottom)  // Start from the bottom
+                .attr("width", d => x(d.x1) - x(d.x0) - 1)
+                .attr("height", 0)  // Start with height 0
+                .style("fill", "#9467BD")  // Own data color
+                .transition()  // Animate the bars
+                .duration(1000)
+                .attr("y", d => y(d.length))  // Move to the correct y position
+                .attr("height", d => y(0) - y(d.length));  // Grow the bars to full height
+
+            // Add a title to the histogram
+            svg.append("text")
+                .attr("text-anchor", "middle")
+                .attr("x", width / 2)
+                .attr("y", margin.top / 2)
+                .text("BMI Adatok Eloszlása")
+                .style("font-size", "20px")
+                .style("font-weight", "bold");
+
+            // Add a legend to distinguish between the datasets
+            svg.append("rect").attr("x", width - 150).attr("y", margin.top - 20).attr("width", 20).attr("height", 20).style("fill", "#9467BD");
+            svg.append("text").attr("x", width - 120).attr("y", margin.top - 5).text("Saját Adatok").style("font-size", "14px").attr("alignment-baseline", "middle");
+            
+            svg.append("rect").attr("x", width - 150).attr("y", margin.top + 10).attr("width", 20).attr("height", 20).style("fill", "#17BECF");
+            svg.append("text").attr("x", width - 120).attr("y", margin.top + 25).text("Kaggle Adatok").style("font-size", "14px").attr("alignment-baseline", "middle");
+
+        }).catch(function(error) {
+            console.error('Error loading or parsing the data:', error);
+        });
+    </script>
+</body>
+</html>

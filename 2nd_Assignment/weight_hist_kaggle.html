@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Histogram</title>
+    <!-- Load D3.js from the official CDN -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <!-- Create an SVG element where the chart will be rendered -->
+    <svg width="800" height="500"></svg>
+
+    <script>
+        // Set the width, height, and margins for the SVG canvas
+        const width = 800;
+        const height = 500;
+        const margin = {top: 50, right: 30, bottom: 60, left: 50};
+
+        // Select the SVG element and set its dimensions
+        const svg = d3.select("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        // Load the CSV file using d3.csv(). This function reads the data from the CSV file
+        d3.csv("https://raw.githubusercontent.com/vlewir/adatvizualizacio/refs/heads/main/BMI_fit_kaggle.csv").then(data => {
+
+            // Map over the CSV data to extract the "Suly (kg)" column (weight) as an array of numbers
+            const weights = data.map(d => +d["Suly (kg)"]);
+
+            // Define the x-axis scale for the weights
+            const x = d3.scaleLinear()
+                .domain([d3.min(weights), d3.max(weights)])  // Input range for x-axis (min and max weights)
+                .range([margin.left, width - margin.right]); // Output range (position on the SVG)
+
+            // Create a histogram generator that bins the data into intervals
+            const histogram = d3.histogram()
+                .domain(x.domain())  // The domain (range of data) matches the x-axis scale
+                .thresholds(x.ticks(10));  // Set 10 bins for the histogram
+
+            // Generate the bins from the weights data
+            const bins = histogram(weights);
+
+            // Define the y-axis scale with a maximum of 60
+            const y = d3.scaleLinear()
+                .domain([0, 60])  // Manually set the upper limit to 60
+                .range([height - margin.bottom, margin.top]);
+
+            // Add the x-axis to the SVG
+            svg.append("g")
+                .attr("transform", `translate(0,${height - margin.bottom})`)  // Position the x-axis
+                .call(d3.axisBottom(x))  // Create the x-axis using the x scale
+                .attr("font-size", '12px');  // Set font size for the axis
+
+            // Add the label for the x-axis ("Suly (kg)")
+            svg.append("text")
+                .attr("text-anchor", "middle")
+                .attr("x", width / 2)
+                .attr("y", height - 20)
+                .text("Súly (kg)")
+                .style("font-size", "14px");
+
+            // Add the y-axis to the SVG
+            svg.append("g")
+                .attr("transform", `translate(${margin.left},0)`)
+                .call(d3.axisLeft(y))
+                .attr("font-size", '12px');
+
+            // Add the label for the y-axis ("Gyakoriság")
+            svg.append("text")
+                .attr("text-anchor", "middle")
+                .attr("x", -height / 2)
+                .attr("y", 15)
+                .attr("transform", "rotate(-90)")
+                .text("Gyakoriság")
+                .style("font-size", "14px");
+
+            // Create rectangles (bars) for the histogram with animation
+            svg.selectAll("rect")
+                .data(bins)
+                .enter()
+                .append("rect")
+                .attr("x", d => x(d.x0) + 1)
+                .attr("y", height - margin.bottom)  // Start at the bottom
+                .attr("width", d => x(d.x1) - x(d.x0) - 1)
+                .attr("height", 0)  // Start with height 0
+                .style("fill", "#17BECF")
+                .transition()  // Add animation
+                .duration(1000)  // Animation duration in ms
+                .attr("y", d => y(d.length))  // Final y position based on data
+                .attr("height", d => y(0) - y(d.length));  // Final height
+
+            // Add a title to the histogram
+            svg.append("text")
+                .attr("text-anchor", "middle")
+                .attr("x", width / 2)
+                .attr("y", margin.top / 2)
+                .text("Súly Adatok Eloszlása (Kaggle Adatok)")
+                .style("font-size", "20px")
+                .style("font-weight", "bold");
+
+        }).catch(function(error) {
+            console.error('Error loading or parsing the data:', error);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight vs BMI Scatter Plot with Tooltip</title>
+    <!-- Load D3.js from the official CDN -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        /* Tooltip styling */
+        .tooltip {
+            position: absolute;
+            background-color: white;
+            border: 1px solid #d3d3d3;
+            padding: 7px;
+            border-radius: 21px;
+            font-size: 12px;
+            pointer-events: none;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- Create an SVG element where the scatter plot will be rendered -->
+    <svg width="800" height="500"></svg>
+    <div class="tooltip"></div>
+
+    <script>
+        // Set the width, height, and margins for the SVG canvas
+        const width = 800;
+        const height = 500;
+        const margin = {top: 50, right: 30, bottom: 60, left: 50};
+
+        // Select the SVG element and set its dimensions
+        const svg = d3.select("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        // Create a tooltip div element
+        const tooltip = d3.select(".tooltip");
+
+        // Load the CSV file using d3.csv()
+        d3.csv("https://raw.githubusercontent.com/vlewir/adatvizualizacio/refs/heads/main/BMI_fit_kaggle.csv").then(data => {
+
+            // Convert the weight, BMI, and height columns to numbers
+            data.forEach(d => {
+                d["Suly (kg)"] = +d["Suly (kg)"];
+                d.BMI = +d.BMI;
+                d["Magassag (m)"] = +d["Magassag (m)"]; // Convert height to a number
+            });
+
+            // Define the x-axis scale for weight, starting from 40
+            const x = d3.scaleLinear()
+                .domain([45, d3.max(data, d => d["Suly (kg)"])]) // Set X-axis to start from 45
+                .range([margin.left, width - margin.right]);
+
+            // Define the y-axis scale for BMI, starting from 10 and going up to 80
+            const y = d3.scaleLinear()
+                .domain([10, 80]) // Set Y-axis to start from 10 and go up to 80
+                .range([height - margin.bottom, margin.top]);
+
+            // Add the x-axis to the SVG
+            svg.append("g")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .call(d3.axisBottom(x))
+                .attr("font-size", '12px');
+
+            // Add the x-axis label
+            svg.append("text")
+                .attr("text-anchor", "middle")
+                .attr("x", width / 2)
+                .attr("y", height - 20)
+                .text("Súly (kg)")
+                .style("font-size", "14px");
+
+            // Add the y-axis to the SVG
+            svg.append("g")
+                .attr("transform", `translate(${margin.left},0)`)
+                .call(d3.axisLeft(y))
+                .attr("font-size", '12px');
+
+            // Add the y-axis label
+            svg.append("text")
+                .attr("text-anchor", "middle")
+                .attr("x", -height / 2)
+                .attr("y", 15)
+                .attr("transform", "rotate(-90)")
+                .text("BMI")
+                .style("font-size", "14px");
+
+            // Create the scatter plot points with a darker outline
+            svg.selectAll("circle")
+                .data(data.filter(d => !isNaN(d["Magassag (m)"])))  // Filter out rows with NaN height
+                .enter()
+                .append("circle")
+                .attr("cx", d => x(d["Suly (kg)"]))
+                .attr("cy", d => y(d.BMI))
+                .attr("r", 4)
+                .style("fill", "#17BECF")   // Fill color
+                .style("stroke", "#0F7F8A") // Darker outline
+                .style("stroke-width", 1.5) // Outline thickness
+                .on("mouseover", function(event, d) {
+                    // Show the tooltip
+                    tooltip.style("visibility", "visible")
+                        .text(`Magasság: ${d["Magassag (m)"]} m`);
+                })
+                .on("mousemove", function(event) {
+                    // Move the tooltip with the mouse
+                    tooltip.style("top", (event.pageY - 10) + "px")
+                        .style("left", (event.pageX + 10) + "px");
+                })
+                .on("mouseout", function() {
+                    // Hide the tooltip when the mouse leaves
+                    tooltip.style("visibility", "hidden");
+                });
+
+            // Add a title to the scatter plot
+            svg.append("text")
+                .attr("text-anchor", "middle")
+                .attr("x", width / 2)
+                .attr("y", margin.top / 2)
+                .text("Súly vs. BMI (Kaggle Adatok)")
+                .style("font-size", "20px")
+                .style("font-weight", "bold");
+
+        }).catch(function(error) {
+            console.error('Error loading or parsing the data:', error);
+        });
+    </script>
+</body>
+</html>
