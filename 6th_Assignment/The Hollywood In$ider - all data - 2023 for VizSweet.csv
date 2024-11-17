@@ -1,0 +1,98 @@
+Film,Year,Domestic gross ($m),Worldwide Gross ($m),Rotten Tomatoes  critics,Rotten Tomatoes Audience ,Budget ($m),budget recovered,times budget recovered,force label,critics vs audience divergence, Primary Genre,Genres,IMDB Rating,exclude label,RT vs IMDB disparity,,,,,,,,,,,,,,,,,,,,Distributor,ID
+Avatar 2,2023,684.0,2320.0,76,92,250.0,928%,9.3,,16,,"Action, Adventure, Fantasy",7.6,,16,,,,,,,,,,,,,,,,,,,,20th Century Studios,6
+Barbie,2023,634.6,1437.9,88,84,145.0,992%,9.9,,-4,,"Adventure, Comedy, Fantasy",7.4,,10,,,,,,,,,,,,,,,,,,,,Warner Bros.,2
+Super Mario Bros,2023,574.0,1358.2,59,95,100.0,1358%,13.6,,36,,"Animation, Adventure, Comedy",7.1,,24,,,,,,,,,,,,,,,,,,,,Universal Pictures,1
+Across the Spider-Verse,2023,381.2,686.9,95,94,100.0,687%,6.9,,-1,,"Animation, Action, Adventure",8.8,,6,,,,,,,,,,,,,,,,,,,,Columbia Pictures,3
+Guardians of the Galaxy 3,2023,358.9,845.3,81,94,250.0,338%,3.4,,13,,"Action, Adventure, Comedy",8.0,,14,,,,,,,,,,,,,,,,,,,,Walt Disney Studios Motion Pictures,4
+Oppenheimer,2023,323.9,938.4,93,91,100.0,938%,9.4,YES,-2,,"Biography, Drama, History",8.6,,5,,,,,,,,,,,,,,,,,,,,Universal Pictures,7
+The Little Mermaid,2023,297.2,563.1,67,94,250.0,225%,2.3,,27,,"Adventure, Family, Fantasy",7.2,,22,,,,,,,,,,,,,,,,,,,,Walt Disney Studios Motion Pictures,5
+Ant-Man: Quantumania,2023,214.5,463.6,45,82,200.0,232%,2.3,,37,,"Action, Adventure, Comedy",6.1,,21,,,,,,,,,,,,,,,,,,,,Walt Disney Studios Motion Pictures,8
+John Wick 4,2023,187.1,432.2,94,93,100.0,432%,4.3,,-1,,"Action, Crime, Thriller",7.8,,15,,,,,,,,,,,,,,,,,,,,Lionsgate,9
+Puss in Boots: The Last Wish,2023,186.0,485.5,95,94,130.0,373%,3.7,,-1,,"Animation, Adventure, Comedy",7.9,,15,,,,,,,,,,,,,,,,,,,,Universal Pictures,17
+Sound of Freedom,2023,184.2,245.7,57,99,14.5,1694%,16.9,,42,,,7.7,,22,,,,,,,,,,,,,,,,,,,,,
+Indiana Jones & the Dial of Destiny,2023,174.5,371.3,69,88,300.0,124%,1.2,,19,,"Action, Adventure",6.8,,20,,,,,,,,,,,,,,,,,,,,Walt Disney Studios Motion Pictures,10
+MI: Dead Reckoning pt1,2023,172.1,560.3,96,94,300.0,187%,1.9,YES,-2,,"Action, Adventure, Thriller",8.0,,14,,,,,,,,,,,,,,,,,,,,Paramount Pictures,13
+Ballad of Songbirds & Snakes,2023,159.7,317.8,64,89,100.0,318%,3.2,,25,,,6.9,,20,,,,,,,,,,,,,,,,,,,,,
+Transformers: Rise of the Beasts,2023,157.0,428.0,52,91,200.0,214%,2.1,,39,,"Action, Adventure, Sci-fi",6.1,,30,,,,,,,,,,,,,,,,,,,,Paramount Pictures,12
+Creed III,2023,156.2,274.5,88,96,75.0,366%,3.7,,8,,"Drama, Sport",6.8,,28,,,,,,,,,,,,,,,,,,,,United Artists Releasing,14
+Elemental,2023,154.4,456.4,74,93,200.0,228%,2.3,,19,,"Animation, Adventure, Comedy",7.1,,22,,,,,,,,,,,,,,,,,,,,Walt Disney Studios Motion Pictures,15
+Fast X,2023,146.1,719.1,56,84,340.0,212%,2.1,,28,,"Action, Adventure, Crime",5.8,,26,,,,,,,,,,,,,,,,,,,,Universal Pictures,16
+Five Nights at Freddy's,2023,137.3,294.9,32,87,20.0,1475%,14.7,,55,,,5.5,,32,,,,,,,,,,,,,,,,,,,,,
+Teenage Mutant Ninja Turtles,2023,118.6,180.5,96,91,70.0,258%,2.6,,-5,,"Animation, Action, Adventure",7.5,,16,,,,,,,,,,,,,,,,,,,,Paramount Pictures,25
+Scream VI,2023,108.2,168.8,76,91,24.0,703%,7.0,,15,,"Horror, Mystery, Thriller",6.5,,26,,,,,,,,,,,,,,,,,,,,Paramount Pictures,18
+The Flash,2023,108.0,268.2,64,83,200.0,134%,1.3,,19,,"Action, Adventure, Fantasy",6.9,,14,,,,,,,,,,,,,,,,,,,,Warner Bros.,19
+Trolls Band Together,2023,97.5,200.8,60,92,95.0,211%,2.1,,32,,,6.0,,32,,,,,,,,,,,,,,,,,,,,,
+Dungeons & Dragons,2023,93.3,207.8,91,93,150.0,139%,1.4,,2,,"Action, Adventure, Comedy",7.3,,20,,,,,,,,,,,,,,,,,,,,Paramount Pictures,20
+The Equalizer 3,2023,92.4,167.8,75,94,70,240%,2.4,,19,,,6.9,,25,,,,,,,,,,,,,,,,,,,,,
+Aquaman & The Lost Kingdom,2023,87.5,274.5,35,81,205.0,134%,1.3,,46,,,6.0,,21,,,,,,,,,,,,,,,,,,,,,
+The Nun II,2023,86.3,249.8,38,70,38.0,657%,6.6,,32,,,5.6,,14,,,,,,,,,,,,,,,,,,,,,
+The Marvels,2023,84.5,199.9,62,83,274.8,73%,0.7,,21,,,5.8,,25,,,,,,,,,,,,,,,,,,,,,
+Meg 2,2023,82.6,376.8,27,73,129.0,292%,2.9,,46,,"Action, Adventure, Horror",5.5,,18,,,,,,,,,,,,,,,,,,,,Warner Bros.,31
+Insidious: The Red Door,2023,82.1,186.0,39,69,16.0,1163%,11.6,,30,,"Horror, Mystery, Thriller",5.6,,13,,,,,,,,,,,,,,,,,,,,Screen Gems,21
+Blue Beetle,2023,72.5,128.7,78,92,104.0,124%,1.2,,14,,,6.1,,31,,,,,,,,,,,,,,,,,,,,,
+Haunted Mansion,2023,67.6,114.8,39,84,150.0,77%,0.8,,45,,"Comedy, Drama, Family",6.3,,21,,,,,,,,,,,,,,,,,,,,Walt Disney Studios Motion Pictures,30
+Killers of the Flower Moon,2023,67.3,156.3,93,84,200.0,78%,0.8,,-9,,,7.8,,6,,,,,,,,,,,,,,,,,,,,,
+Evil Dead Rise,2023,67.2,146.0,84,76,17.0,859%,8.6,,-8,,Horror ,6.6,,10,,,,,,,,,,,,,,,,,,,,Warner Bros.,22
+The Exorcist: Believer,2023,65.5,125.7,22,59,30.0,419%,4.2,,37,Horror,,4.9,,10,,,,,,,,,,,,,,,,,,,,,
+A Man Called Otto,2023,64.2,109.0,70,97,50.0,218%,2.2,,27,,"Comedy, Drama",7.5,,22,,,,,,,,,,,,,,,,,,,,Columbia Pictures,24
+Cocaine Bear,2023,64.0,89.3,67,71,35.0,255%,2.6,,4,,"Comedy, Thriller",5.9,,12,,,,,,,,,,,,,,,,,,,,Universal Pictures,23
+PAW Patrol,2023,62.0,181.9,80,97,30.0,606%,6.1,,17,,,6.1,,36,,,,,,,,,,,,,,,,,,,,,
+Wish,2023,60.9,176.9,48,81,200.0,88%,0.9,,33,,,5.8,,23,,,,,,,,,,,,,,,,,,,,,
+Napoleon,2023,60.5,206.9,59,59,200.0,103%,1.0,,0,,,6.6,,-7,,,,,,,,,,,,,,,,,,,,,
+Shazam! Fury of the Gods,2023,57.6,132.2,90,82,125.0,106%,1.1,,-8,,"Action, Adventure, Comedy",6.0,,22,,,,,,,,,,,,,,,,,,,,Warner Bros.,26
+Migration,2023,54.1,117.5,72,87,72.0,163%,1.6,,15,,,6.9,,18,,,,,,,,,,,,,,,,,,,,,
+Saw X,2023,53.6,95,79,89,13,731%,7.3,,10,Horror,,6.7,,22,,,,,,,,,,,,,,,,,,,,,
+Air,2023,52.5,89.5,93,98,90.0,99%,1.0,,5,,"Drama, Sport",7.4,,24,,,,,,,,,,,,,,,,,,,,-,27
+Jesus Revolution,2023,52.1,53.1,55,99,15.0,354%,3.5,,44,,Drama. ,7.1,,28,,,,,,,,,,,,,,,,,,,,Lionsgate,28
+No Hard Feelings,2023,50.4,33.2,71,87,45.0,74%,0.7,,16,,"Comedy, Romance",6.5,,22,,,,,,,,,,,,,,,,,,,,Sony Pictures Entertainment (SPE),29
+Talk to Me,2023,48.9,70.7,94,82,4.5,1571%,15.7,,-12,,,7.1,,11,,,,,,,,,,,,,,,,,,,,,
+Godzilla Minus One,2023,45.6,69.6,98,98,15.0,464%,4.6,,0,,,8.4,,14,,,,,,,,,,,,,,,,,,,,,
+Gran Turismo,2023,44.4,117.8,65,98,60.0,196%,2.0,,33,,,7.2,,26,,,,,,,,,,,,,,,,,,,,,
+The Color Purple,2023,44.0,44.0,87,95,100.0,44%,0.4,,8,,,7.8,,17,,,,,,,,,,,,,,,,,,,,,
+The Boogeyman,2023,43.3,82.3,62,66,35.0,235%,2.4,,4,,"Horror, Mystery, Thriller",6.1,,5,,,,,,,,,,,,,,,,,,,,Walt Disney Studios Motion Pictures,32
+A Haunting in Venice,2023,42.3,113.6,76,77,70.0,162%,1.6,,1,,,6.5,,12,,,,,,,,,,,,,,,,,,,,,
+The Creator,2023,40.7,98.7,67,76,80.0,123%,1.2,,9,,,7.1,,5,,,,,,,,,,,,,,,,,,,,,
+80 for Brady,2023,39.3,40.3,58,89,28.0,144%,1.4,,31,,"Comedy, Drama, Sport",5.8,,31,,,,,,,,,,,,,,,,,,,,Paramount Pictures,33
+80s for Brady,2023,39.3,40.3,58,89,28.0,144%,1.4,,31,,,5.8,,31,,,,,,,,,,,,,,,,,,,,,
+Knock at the Cabin,2023,35.4,19.3,67,63,20.0,97%,1.0,,-4,,"Horror, Mystery, Thriller",6.1,,2,,,,,,,,,,,,,,,,,,,,Universal Pictures,34
+Missing,2023,32.5,45.1,87,90,7.0,644%,6.4,,3,,"Drama, Mystery, Thriller",7.1,,19,,,,,,,,,,,,,,,,,,,,Sony Pictures Entertainment (SPE),35
+Plane,2023,32.1,15.7,78,94,25.0,63%,0.6,,16,,"Action, Adventure, Thriller",6.5,,29,,,,,,,,,,,,,,,,,,,,Lionsgate,36
+65,2023,32.0,56.3,34,65,45.0,125%,1.3,,31,,"Action, Adventure, Drama",6.5,,0,,,,,,,,,,,,,,,,,,,,Sony Pictures Entertainment (SPE),37
+Thanksgiving,2023,31.8,45.9,83,79,15.0,306%,3.1,,-4,,,6.5,,14,,,,,,,,,,,,,,,,,,,,,
+My Big Fat Greek Wedding 3,2023,28.4,37.1,29,72,18.0,206%,2.1,,43,,,5.2,,20,,,,,,,,,,,,,,,,,,,,,
+Asteroid City,2023,28.1,47.7,74,62,25.0,191%,1.9,,-12,,"Comedy, Drama, Romance",6.7,,-5,,,,,,,,,,,,,,,,,,,,Focus Features,38
+Magic Mike's Last Dance,2023,26.0,56.3,48,73,45.0,125%,1.3,,25,,"Comedy, Drama",5.2,,21,,,,,,,,,,,,,,,,,,,,Warner Bros.,40
+Anyone But You,2023,24.8,38.0,53,86,25.0,152%,1.5,,33,,,6.6,,20,,,,,,,,,,,,,,,,,,,,,
+Strays,2023,23.9,35.9,53,69,46.0,78%,0.8,,16,,,6.6,,3,,,,,,,,,,,,,,,,,,,,,
+The Boys in the Boat,2023,21.9,,56,96,40.0,0%,0.0,,40,,,7.3,,23,,,,,,,,,,,,,,,,,,,,,
+Priscilla,2023,20.8,21.2,83,62,20.0,106%,1.1,,-21,,,6.7,,-5,,,,,,,,,,,,,,,,,,,,,
+"Are You There God? It's Me, Margaret.",2023,20.4,21.5,99,95,30.0,72%,0.7,,-4,,"Comedy, Drama, Family",7.4,,21,,,,,,,,,,,,,,,,,,,,Lionsgate,41
+The Pope's Exorcist,2023,20.0,72.9,49,81,18.0,405%,4.1,,32,,"Horror, Thriller",6.1,,20,,,,,,,,,,,,,,,,,,,,Screen Gems,42
+The Holdovers,2023,18.3,19.7,96,91,70.0,28%,0.3,,-5,,,8.0,,11,,,,,,,,,,,,,,,,,,,,,
+The Blackening,2023,17.7,17.7,87,85,5.0,354%,3.5,,-2,,"Comedy, Horror, Thriller",6.0,,25,,,,,,,,,,,,,,,,,,,,Lionsgate,43
+Book Club: The Next Chapter,2023,17.5,28.2,48,84,20.0,141%,1.4,,36,,Comedy,5.6,,28,,,,,,,,,,,,,,,,,,,,Focus Features,44
+Renfield,2023,17.2,26.7,58,79,65.0,41%,0.4,,21,,"Comedy, Fantasy, Horror",6.4,,15,,,,,,,,,,,,,,,,,,,,Universal Pictures,45
+The Covenant,2023,16.9,20.4,83,98,55.0,37%,0.4,,15,,"Action, Thriller, War",7.5,,23,,,,,,,,,,,,,,,,,,,,Metro-Goldwyn-Mayer (MGM),46
+Expend4bles,2023,16.7,47.0,14,71,100.0,47%,0.5,,57,,,4.8,,23,,,,,,,,,,,,,,,,,,,,,
+The Iron Claw,2023,16.4,16.4,89,93,15.9,103%,1.0,,4,,,8.1,,12,,,,,,,,,,,,,,,,,,,,,
+"Ruby Gillman, Teenage Kraken",2023,15.7,41.8,65,81,70.0,60%,0.6,,16,,"Animation, Action, Adventure",5.7,,24,,,,,,,,,,,,,,,,,,,,DreamWorks,47
+Babylon,2023,15.4,63.3,57,52,110.0,58%,0.6,,-5,,"Comedy, Drama, History",7.2,,-20,,,,,,,,,,,,,,,,,,,,Paramount Pictures,51
+Dumb Money,2023,13.9,13.7,84,85,30.0,46%,0.5,,1,,,7.1,YES,14,,,,,,,,,,,,,,,,,,,,,
+Joy Ride,2023,12.9,15.0,91,82,32.0,47%,0.5,,-9,,Comedy,6.6,,16,,,,,,,,,,,,,,,,,,,,Lionsgate,48
+About My Father,2023,12.1,17.5,35,81,29.0,60%,0.6,,46,,Comedy,5.7,,24,,,,,,,,,,,,,,,,,,,,Lionsgate,49
+The Last Voyage of the Demeter,2023,12.0,13.7,51,72,45.0,30%,0.3,,21,,Horror,6.5,,7,,,,,,,,,,,,,,,,,,,,Universal Pictures,60
+The Shift,2023,11.9,12.0,39,87,6.4,188%,1.9,,48,,,6.5,,22,,,,,,,,,,,,,,,,,,,,,
+Saltburn,2023,11.3,20.3,71,79,20.0,102%,1.0,,8,,,7.2,,7,,,,,,,,,,,,,,,,,,,,,
+Ferrari,2023,10.7,19.6,73,73,95.0,21%,0.2,,0,,,6.8,,5,,,,,,,,,,,,,,,,,,,,,
+Poor Things,2023,10.3,12.1,93,82,35.0,35%,0.3,,-11,,,8.5,,-3,,,,,,,,,,,,,,,,,,,,,
+Silent Night,2023,7.9,9.8,58,51,20.0,49%,0.5,,-7,,,5.3,,-2,,,,,,,,,,,,,,,,,,,,,
+Beau Is Afraid,2023,7.5,10.6,67,71,35.0,30%,0.3,,4,,"Comedy, Drama, Horror",6.8,,3,,,,,,,,,,,,,,,,,,,,A24,50
+Infinity Pool,2023,5.0,5.4,86,52,4.5,120%,1.2,,-34,,"Crime, Horror, Mystery",6.1,,-9,,,,,,,,,,,,,,,,,,,,Neon,53
+You Hurt My Feelings,2023,4.8,5.3,94,64,25.0,21%,0.2,,-30,,"Comedy, Drama",6.7,YES,-3,,,,,,,,,,,,,,,,,,,,A24,54
+Kandahar,2023,4.8,7.6,46,82,70.0,11%,0.1,,36,,"Action, Thriller ",6.0,YES,22,,,,,,,,,,,,,,,,,,,,Open Road Films (II),55
+It Lives Inside,2023,4.6,5.3,61,48,10.0,53%,0.5,,-13,,,5.3,,-5,,,,,,,,,,,,,,,,,,,,,
+Hypnotic,2023,4.5,9.4,34,62,65.0,14%,0.1,,28,,"Action , Mystery, Thriller",5.5,YES,7,,,,,,,,,,,,,,,,,,,,Ketchup Entertainment,56
+Mummies,2023,4.3,53.2,53,88,12.0,443%,4.4,,35,,"Animation, Comedy, Famuly",5.9,,29,,,,,,,,,,,,,,,,,,,,Warner Bros.,57
+Mafia Mamma,2023,3.5,7.0,21,67,41.0,17%,0.2,,46,,"Action, Comedy, Crime",5.4,YES,13,,,,,,,,,,,,,,,,,,,,Bleecker Street Media,58
+Theater Camp,2023,3.4,3.4,84,81,8.0,43%,0.4,,-3,,Comedy,7.5,,6,,,,,,,,,,,,,,,,,,,,Searchlight Pictures,59
+Wonka,2023,147.0,400.0,84,91,125.0,320%,3.2,,7,,,7.3,,18,,,,,,,,,,,,,,,,,,,,,
