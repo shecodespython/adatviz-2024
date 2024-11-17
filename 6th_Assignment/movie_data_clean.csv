@@ -1,0 +1,58 @@
+Film,Worldwide Gross ($m),Budget ($m),Budget Recovered,Genres,IMDB_Rating,Rotten_Avg
+Avatar 2,2320.0,250.0,928%,"Action, Adventure, Fantasy",6.0,84.0
+Barbie,1437.9,145.0,992%,"Adventure, Comedy, Fantasy",2.0,86.0
+Super Mario Bros,1358.2,100.0,1358%,"Animation, Adventure, Comedy",1.0,77.0
+Across the Spider-Verse,686.9,100.0,687%,"Animation, Action, Adventure",3.0,94.5
+Guardians of the Galaxy 3,845.3,250.0,338%,"Action, Adventure, Comedy",4.0,87.5
+Oppenheimer,938.4,100.0,938%,"Biography, Drama, History",7.0,92.0
+The Little Mermaid,563.1,250.0,225%,"Adventure, Family, Fantasy",5.0,80.5
+Ant-Man: Quantumania,463.6,200.0,232%,"Action, Adventure, Comedy",8.0,63.5
+John Wick 4,432.2,100.0,432%,"Action, Crime, Thriller",9.0,93.5
+Puss in Boots: The Last Wish,485.5,130.0,373%,"Animation, Adventure, Comedy",17.0,94.5
+Indiana Jones & the Dial of Destiny,371.3,300.0,124%,"Action, Adventure",10.0,78.5
+MI: Dead Reckoning pt1,560.3,300.0,187%,"Action, Adventure, Thriller",13.0,95.0
+Transformers: Rise of the Beasts,428.0,200.0,214%,"Action, Adventure, Sci-fi",12.0,71.5
+Creed III,274.5,75.0,366%,"Drama, Sport",14.0,92.0
+Elemental,456.4,200.0,228%,"Animation, Adventure, Comedy",15.0,83.5
+Fast X,719.1,340.0,212%,"Action, Adventure, Crime",16.0,70.0
+Teenage Mutant Ninja Turtles,180.5,70.0,258%,"Animation, Action, Adventure",25.0,93.5
+Scream VI,168.8,24.0,703%,"Horror, Mystery, Thriller",18.0,83.5
+The Flash,268.2,200.0,134%,"Action, Adventure, Fantasy",19.0,73.5
+Dungeons & Dragons,207.8,150.0,139%,"Action, Adventure, Comedy",20.0,92.0
+Meg 2,376.8,129.0,292%,"Action, Adventure, Horror",31.0,50.0
+Insidious: The Red Door,186.0,16.0,1163%,"Horror, Mystery, Thriller",21.0,54.0
+Haunted Mansion,114.8,150.0,77%,"Comedy, Drama, Family",30.0,61.5
+Evil Dead Rise,146.0,17.0,859%,Horror ,22.0,80.0
+A Man Called Otto,109.0,50.0,218%,"Comedy, Drama",24.0,83.5
+Cocaine Bear,89.3,35.0,255%,"Comedy, Thriller",23.0,69.0
+Shazam! Fury of the Gods,132.2,125.0,106%,"Action, Adventure, Comedy",26.0,86.0
+Air,89.5,90.0,99%,"Drama, Sport",27.0,95.5
+Jesus Revolution,53.1,15.0,354%,Drama. ,28.0,77.0
+No Hard Feelings,33.2,45.0,74%,"Comedy, Romance",29.0,79.0
+The Boogeyman,82.3,35.0,235%,"Horror, Mystery, Thriller",32.0,64.0
+80 for Brady,40.3,28.0,144%,"Comedy, Drama, Sport",33.0,73.5
+Knock at the Cabin,19.3,20.0,97%,"Horror, Mystery, Thriller",34.0,65.0
+Missing,45.1,7.0,644%,"Drama, Mystery, Thriller",35.0,88.5
+Plane,15.7,25.0,63%,"Action, Adventure, Thriller",36.0,86.0
+65,56.3,45.0,125%,"Action, Adventure, Drama",37.0,49.5
+Asteroid City,47.7,25.0,191%,"Comedy, Drama, Romance",38.0,68.0
+Magic Mike's Last Dance,56.3,45.0,125%,"Comedy, Drama",40.0,60.5
+"Are You There God? It's Me, Margaret.",21.5,30.0,72%,"Comedy, Drama, Family",41.0,97.0
+The Pope's Exorcist,72.9,18.0,405%,"Horror, Thriller",42.0,65.0
+The Blackening,17.7,5.0,354%,"Comedy, Horror, Thriller",43.0,86.0
+Book Club: The Next Chapter,28.2,20.0,141%,Comedy,44.0,66.0
+Renfield,26.7,65.0,41%,"Comedy, Fantasy, Horror",45.0,68.5
+The Covenant,20.4,55.0,37%,"Action, Thriller, War",46.0,90.5
+"Ruby Gillman, Teenage Kraken",41.8,70.0,60%,"Animation, Action, Adventure",47.0,73.0
+Babylon,63.3,110.0,58%,"Comedy, Drama, History",51.0,54.5
+Joy Ride,15.0,32.0,47%,Comedy,48.0,86.5
+About My Father,17.5,29.0,60%,Comedy,49.0,58.0
+The Last Voyage of the Demeter,13.7,45.0,30%,Horror,60.0,61.5
+Beau Is Afraid,10.6,35.0,30%,"Comedy, Drama, Horror",50.0,69.0
+Infinity Pool,5.4,4.5,120%,"Crime, Horror, Mystery",53.0,69.0
+You Hurt My Feelings,5.3,25.0,21%,"Comedy, Drama",54.0,79.0
+Kandahar,7.6,70.0,11%,"Action, Thriller ",55.0,64.0
+Hypnotic,9.4,65.0,14%,"Action , Mystery, Thriller",56.0,48.0
+Mummies,53.2,12.0,443%,"Animation, Comedy, Famuly",57.0,70.5
+Mafia Mamma,7.0,41.0,17%,"Action, Comedy, Crime",58.0,44.0
+Theater Camp,3.4,8.0,43%,Comedy,59.0,82.5
